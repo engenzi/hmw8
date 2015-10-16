@@ -1,0 +1,23 @@
+from django.db import models
+
+class Coursetracer(models.Model):
+
+      TermCode = models.IntegerField()
+      TermDistr = models.CharField()
+      crn = models.IntegerField()
+      subj = models.CharField()
+      courseNum = models.IntegerField()
+      sect = models.IntegerField()
+      scheDesc = models.CharField()
+      tittle = models.CharField()
+      maxEnroll = models.IntegerField()
+      actEnroll = models.IntegerField()
+
+      def getPrompt(self):
+          return self .prompt
+
+      def _unicode_ (self):
+          return self .prompt
+
+#  class Meta:
+#      abstract = True
